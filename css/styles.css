@@ -1,0 +1,165 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+:root{
+    --Very-Dark-Grayish-Blue: hsl(217, 19%, 35%);
+    --Desaturated-Dark-Blue: hsl(214, 17%, 51%);
+    --Grayish-Blue: hsl(212, 23%, 69%);
+    --Light-Grayish-Blue: hsl(210, 46%, 95%);
+    }
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Manrope", sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    height: 100vh;
+}
+
+main{
+    height: 100%;
+    background-color: var(--Light-Grayish-Blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-weight: 700;
+    font-size:24px;
+    color: var(--Very-Dark-Grayish-Blue)
+}
+
+
+.card{
+    width: 800px;
+    height: 300px;
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 30px 0px var(--Grayish-Blue);
+}
+
+
+.container-img{
+    width: 40%;
+    height: 100%;
+}
+
+.container-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.container-text{
+    width: 70%;
+    height: 100%;
+    padding: 30px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.text{
+    color: var(--Desaturated-Dark-Blue);
+    line-height: 20px;
+}
+
+.container-profile{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.face{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.name{
+    color: var(--Very-Dark-Grayish-Blue);
+    font-weight: 700;
+    padding-bottom: 3px;
+}
+
+.date{
+    color: var(--Grayish-Blue);
+}
+
+button{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+}
+
+.share{
+    display: flex;
+    width: 190px;
+    height: 30px;
+    background: var(--Very-Dark-Grayish-Blue);
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: absolute;
+    top: 53%;
+    left: 63%;
+    border-radius: 10px;
+    padding: 20px 10px;
+    margin-left: 5px;
+    
+}
+
+.share .triang{
+    background-color: var(--Very-Dark-Grayish-Blue);
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 75%;
+    left: 44%;
+    transform: rotate(45deg);
+
+}
+
+.share p{
+    color:var(--Grayish-Blue);
+    letter-spacing: 3px;
+}
+
+.share-imgs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.share-imgs img{
+    width: 15px;
+    cursor: pointer;
+}
+
+
+.share.active{
+    display: none;
+  /*   transition: 2s ease; */
+}
+
+
+
