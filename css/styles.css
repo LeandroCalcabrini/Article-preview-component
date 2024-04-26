@@ -35,7 +35,8 @@ main{
 h1{
     font-weight: 700;
     font-size:24px;
-    color: var(--Very-Dark-Grayish-Blue)
+    color: var(--Very-Dark-Grayish-Blue);
+    padding-top: 20px;
 }
 
 
@@ -63,8 +64,9 @@ h1{
 .container-text{
     width: 70%;
     height: 100%;
-    padding: 30px 40px;
+    padding: 0px 40px;
     display: flex;
+    justify-content: space-between;
     flex-direction: column;
     gap: 20px;
 }
@@ -78,6 +80,8 @@ h1{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+    padding-bottom: 20px;
 }
 
 .face{
@@ -107,6 +111,11 @@ button{
     height: 30px;
     border-radius: 50%;
     border: none;
+    cursor: pointer;
+}
+
+.arrow{
+    position: relative;
 }
 
 .share{
@@ -118,12 +127,12 @@ button{
     justify-content: center;
     gap: 10px;
     position: absolute;
-    top: 53%;
-    left: 63%;
+    bottom: 70px;
+    right: -85px;
     border-radius: 10px;
     padding: 20px 10px;
     margin-left: 5px;
-    
+    display: none;
 }
 
 .share .triang{
@@ -157,9 +166,51 @@ button{
 
 
 .share.active{
-    display: none;
-  /*   transition: 2s ease; */
+    display:inline-flex
+    
 }
 
 
+
+@media(max-width:450px){
+    .card{
+        flex-direction: column;
+        height: 500px;
+        margin: 20px;
+    }
+
+    .container-img{
+        width: 100%;
+        height: 40%;
+    }
+
+    .container-img img{
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    .container-text{
+        width: 100%;
+    }
+
+    h1{
+        font-size: 16px;
+    }
+
+    .container-profile.mobile{
+        flex-direction: row-reverse;
+        background: var(--Very-Dark-Grayish-Blue);
+        justify-content: space-evenly;
+        border-radius: 10px;
+       
+    }
+
+    .container-profile.mobile .share{
+        position: static;
+        display: inline-flex;
+    }
+
+    .container-profile.mobile .triang{
+        display: none;
+    }
+}
 
